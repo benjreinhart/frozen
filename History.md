@@ -1,0 +1,4 @@
+0.0.1 / 2014-06-02
+==================
+
+* Initial commit -- `freeze` and `melt` methods

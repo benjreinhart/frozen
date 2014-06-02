@@ -1,0 +1,32 @@
+{
+    "name": "frozen"
+  , "version": "0.0.1"
+  , "description": "Provides functionality for freezing time and dates"
+  , "author": "benjreinhart"
+  , "engines":
+    {
+      "node": "*"
+    }
+
+  , "keywords":
+    [
+        "date"
+      , "time"
+      , "datetime"
+      , "freeze"
+      , "stub"
+    ]
+
+  , "dependencies":
+    {
+    }
+
+  , "devDependencies":
+    {
+        "chai": "~1.9"
+      , "mocha": "~1.18"
+    }
+
+  , "main": "index.js"
+  , "license": "MIT"
+}
