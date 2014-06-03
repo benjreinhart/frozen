@@ -2,6 +2,7 @@ var NativeDate = global.Date;
 
 exports.freeze = function(date) {
   date || (date = new Date);
+
   global.Date = function() {
     if (!(this instanceof NativeDate))
       return NativeDate.apply(this, arguments);
@@ -24,12 +25,15 @@ exports.freeze = function(date) {
       return new NativeDate(arguments[0], arguments[1], arguments[2], arguments[3], arguments[4], arguments[5], arguments[6]);
     }
   }
+
   Object.keys(NativeDate).forEach(function(prop) {
     Date[prop] = NativeDate[prop];
   });
+
   Date.now = function() {
     return date.valueOf();
   }
+
   Date.prototype = Object.create(NativeDate.prototype);
   Date.prototype.constructor = NativeDate;
 }
