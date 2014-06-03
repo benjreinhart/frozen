@@ -27,6 +27,19 @@
       , "mocha": "~1.18"
     }
 
+ , "repository":
+    {
+        "type" : "git"
+      , "url"  : "git@github.com:benjreinhart/frozen.git"
+    }
+
+  , "bugs":
+    {
+        "url": "https://github.com/benjreinhart/frozen/issues"
+    }
+
+  , "homepage": "https://github.com/benjreinhart/frozen"
+
   , "main": "index.js"
   , "license": "MIT"
 }
