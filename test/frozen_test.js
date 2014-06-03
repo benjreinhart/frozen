@@ -47,8 +47,8 @@ describe('Frozen', function() {
       expect(date2.getMonth()).to.equal(5);
       expect(date2.getDate()).to.equal(2);
       expect(date2.getHours()).to.equal(17);
-      expect(date1.getMinutes()).to.equal(33);
-      expect(date1.getSeconds()).to.equal(12);
+      expect(date2.getMinutes()).to.equal(33);
+      expect(date2.getSeconds()).to.equal(12);
       expect(date2.getMilliseconds()).to.equal(438);
     });
 
